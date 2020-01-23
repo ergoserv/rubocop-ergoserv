@@ -1,0 +1,20 @@
+require:
+  - rubocop-performance
+  - rubocop-rspec
+
+AllCops:
+  Exclude:
+    - vendor/bundle/**/* # fix for running on Travis CI
+
+#################### Layout ##############################
+
+Layout/ArgumentAlignment:
+  EnforcedStyle: with_fixed_indentation
+
+#################### Style ###############################
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
