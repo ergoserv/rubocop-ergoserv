@@ -1,0 +1,68 @@
+# ErgoServ (www.ergoserv.com) RuboCop Config
+
+require:
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rspec
+
+AllCops:
+  Exclude:
+    - 'bin/*'
+    - 'db/schema.rb'
+    - 'db/migrate/*'
+    - 'node_modules/**/*'
+    - 'vendor/**/*'
+
+#################### Layout ###############################
+
+Layout/ArgumentAlignment:
+  EnforcedStyle: with_fixed_indentation
+
+#################### Metrics ###############################
+
+Metrics/BlockLength:
+  ExcludedMethods:
+    - describe
+    - resource
+
+Metrics/MethodLength:
+  Max: 30
+
+#################### Naming ################################
+
+Naming/MemoizedInstanceVariableName:
+  Exclude:
+    - 'app/apis/**/resources/*_resource.rb'
+
+#################### Rails #################################
+
+Rails:
+  Enabled: true
+
+#################### RSpec #################################
+
+RSpec/ExampleLength:
+  Max: 10
+
+RSpec/NamedSubject:
+  Enabled: false
+
+#################### Style #################################
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/NegatedIf:
+  EnforcedStyle: postfix
+
+Style/NumericPredicate:
+  EnforcedStyle: comparison
+
+Style/RescueStandardError:
+  EnforcedStyle: implicit
