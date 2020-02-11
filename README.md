@@ -8,7 +8,12 @@ Add this line to your application's `Gemfile`:
 
 ```ruby
 group :development, :test  do
+  # version released to RubyGems (most probably outdated)
   gem 'rubocop-ergoserv', require: false
+  # or latest version from the repository (recommended)
+  gem 'auxiliary_rails',
+    git: 'https://github.com/ergoserv/rubocop-ergoserv',
+    require: false
 end
 ```
 
