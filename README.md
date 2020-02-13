@@ -54,3 +54,11 @@ The gem is available as open source under the terms of the [MIT License](https:/
 ## Code of Conduct
 
 Everyone interacting in the Rubocop::ErgoServ project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/rubocop-ergoserv/blob/master/CODE_OF_CONDUCT.md).
+
+-------------------------------------------------------------------------------
+
+[![alt text](https://raw.githubusercontent.com/ergoserv/rubocop-ergoserv/master/assets/ErgoServ_horizontalColor@sign+text+bg.png "ErgoServ - Web and Mobile Development Company")](https://www.ergoserv.com)
+
+This gem was created and is maintained by [ErgoServ](https://www.ergoserv.com).
+
+If you like what you see and would like to hire us or join us, [get in touch](https://www.ergoserv.com)!
