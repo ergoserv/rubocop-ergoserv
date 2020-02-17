@@ -3,10 +3,10 @@ PATH
   specs:
     rubocop-ergoserv (0.1.0)
       rubocop (~> 0.78)
-      rubocop-performance
-      rubocop-rails
-      rubocop-rake
-      rubocop-rspec
+      rubocop-performance (~> 1.5.2)
+      rubocop-rails (~> 2.4.2)
+      rubocop-rake (~> 0.5.1)
+      rubocop-rspec (~> 1.38.1)
 
 GEM
   remote: https://rubygems.org/
