@@ -10,6 +10,7 @@ Add this line to your application's `Gemfile`:
 group :development, :test  do
   # version released to RubyGems (most probably outdated)
   gem 'rubocop-ergoserv', require: false
+
   # or latest version from the repository (recommended)
   gem 'auxiliary_rails',
     git: 'https://github.com/ergoserv/rubocop-ergoserv',
@@ -27,7 +28,7 @@ Or install it yourself as:
 
 ## Usage
 
-Create a `.rubocop.yml` with the following directives:
+Update your `.rubocop.yml` file with the following directives:
 
 ```yaml
 inherit_gem:
@@ -41,7 +42,7 @@ Now, run:
 
 *Note:* You may have to use `bundle exec` to make `inherit_gem` directive work correctly.
 
-You do not need to include `rubocop` directly in your application's dependencies. `rubocop-ergoserv` will include a required versions of `rubocop`, `rubocop-performance`, `rubocop-rails` and `rubocop-rspec`.
+You do not need to include `rubocop` directly in your application's dependencies. `rubocop-ergoserv` will include a required versions of `rubocop`, `rubocop-performance`, `rubocop-rails`, `rubocop-rake` and `rubocop-rspec`.
 
 ## Contributing
 
