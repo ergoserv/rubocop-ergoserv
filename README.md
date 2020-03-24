@@ -12,7 +12,7 @@ group :development, :test  do
   gem 'rubocop-ergoserv', require: false
 
   # or latest version from the repository (recommended)
-  gem 'auxiliary_rails',
+  gem 'rubocop-ergoserv',
     git: 'https://github.com/ergoserv/rubocop-ergoserv',
     require: false
 end
