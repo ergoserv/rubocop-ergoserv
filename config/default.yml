@@ -18,6 +18,14 @@ AllCops:
 
 Layout/ArgumentAlignment:
   EnforcedStyle: with_fixed_indentation
+  
+#################### Lint ##################################
+
+Lint/RaiseException:
+  Enabled: true
+
+Lint/StructNewOverride:
+  Enabled: true
 
 #################### Metrics ###############################
 
