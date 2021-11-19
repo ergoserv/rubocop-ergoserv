@@ -33,7 +33,7 @@ Lint/StructNewOverride:
 #################### Metrics ###############################
 
 Metrics/BlockLength:
-  ExcludedMethods:
+  IgnoredMethods:
     - describe
     - resource
 
