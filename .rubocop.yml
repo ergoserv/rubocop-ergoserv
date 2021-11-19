@@ -3,13 +3,18 @@ require:
   - rubocop-rspec
 
 AllCops:
+  NewCops: enable
   Exclude:
+    - bin/rubocop
     - vendor/bundle/**/* # fix for running on Travis CI
 
 #################### Layout ##############################
 
 Layout/ArgumentAlignment:
   EnforcedStyle: with_fixed_indentation
+
+Layout/LineEndStringConcatenationIndentation:
+  EnforcedStyle: indented
 
 #################### Style ###############################
 

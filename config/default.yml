@@ -18,7 +18,10 @@ AllCops:
 
 Layout/ArgumentAlignment:
   EnforcedStyle: with_fixed_indentation
-  
+
+Layout/LineEndStringConcatenationIndentation:
+  EnforcedStyle: indented
+
 #################### Lint ##################################
 
 Lint/RaiseException:

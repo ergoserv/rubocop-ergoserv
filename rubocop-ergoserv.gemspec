@@ -17,6 +17,7 @@ Gem::Specification.new do |spec|
     spec.metadata['homepage_uri'] = spec.homepage
     spec.metadata['source_code_uri'] = spec.homepage
     spec.metadata['changelog_uri'] = spec.homepage
+    spec.metadata['rubygems_mfa_required'] = 'true'
   else
     raise 'RubyGems 2.0 or newer is required to protect against ' \
       'public gem pushes.'
@@ -29,15 +30,17 @@ Gem::Specification.new do |spec|
   end
   spec.require_paths = ['lib']
 
+  spec.required_ruby_version = '>= 2.7'
+
   spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'pry'
   spec.add_development_dependency 'rake'
   spec.add_development_dependency 'rspec'
   spec.add_development_dependency 'rspec-shell-expectations'
 
-  spec.add_runtime_dependency 'rubocop', '0.81'
-  spec.add_runtime_dependency 'rubocop-performance', '~> 1.5.2'
-  spec.add_runtime_dependency 'rubocop-rails', '~> 2.4.2'
-  spec.add_runtime_dependency 'rubocop-rake', '~> 0.5.1'
-  spec.add_runtime_dependency 'rubocop-rspec', '~> 1.38.1'
+  spec.add_runtime_dependency 'rubocop', '~> 1.23.0'
+  spec.add_runtime_dependency 'rubocop-performance', '~> 1.12.0'
+  spec.add_runtime_dependency 'rubocop-rails', '~> 2.12.4'
+  spec.add_runtime_dependency 'rubocop-rake', '~> 0.6.0'
+  spec.add_runtime_dependency 'rubocop-rspec', '~> 2.6.0'
 end
