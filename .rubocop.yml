@@ -8,6 +8,11 @@ AllCops:
     - bin/rubocop
     - vendor/bundle/**/* # fix for running on Travis CI
 
+#################### Gemspec #############################
+
+Gemspec/RequiredRubyVersion:
+  Enabled: false
+
 #################### Layout ##############################
 
 Layout/ArgumentAlignment:

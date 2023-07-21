@@ -5,6 +5,7 @@ require:
   - rubocop-rails
   - rubocop-rake
   - rubocop-rspec
+  - rubocop-factory_bot
 
 AllCops:
   Exclude:
@@ -31,11 +32,6 @@ Lint/StructNewOverride:
   Enabled: true
 
 #################### Metrics ###############################
-
-Metrics/BlockLength:
-  IgnoredMethods:
-    - describe
-    - resource
 
 Metrics/MethodLength:
   Max: 30
@@ -75,6 +71,9 @@ Style/FrozenStringLiteralComment:
 
 Style/IfUnlessModifier:
   Enabled: false
+
+Style/Lambda:
+  EnforcedStyle: literal
 
 Style/NegatedIf:
   EnforcedStyle: postfix
